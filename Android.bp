@@ -5,9 +5,6 @@
 //
 
 soong_namespace {
-    imports: [
-        "vendor/samsung/s5e8535-common"
-    ],
 }
 
 cc_library_headers {
@@ -20,4 +17,34 @@ prebuilt_hidl_interfaces {
     interfaces: [
         "vendor.samsung.hardware.nfc@2.0::ISehNfc",
     ],
+}
+
+cc_library_headers {
+    name: "libexynos_headers",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+}
+
+cc_library_headers {
+    name: "libhdrinterface_header_default",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+}
+
+cc_library_headers {
+    name: "libhdr10p_meta_interface_header",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+}
+
+cc_library_headers {
+    name: "libhdrinterface_header",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+}
+
+cc_library_headers {
+    name: "libgralloc4_headers_exynos",
+    export_include_dirs: ["include"],
+    vendor_available: true,
 }
