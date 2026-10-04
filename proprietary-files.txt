@@ -113,8 +113,6 @@ vendor/lib64/hw/gatekeeper.s5e8535.so
 vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
 
@@ -199,7 +197,6 @@ vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
 vendor/lib64/libdsms_vendor.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so
 vendor/lib64/libkeymaster_portable-samsung.so
 vendor/lib64/libpuresoftkeymasterdevice-samsung.so
 vendor/lib64/libkeymaster_messages-samsung.so
