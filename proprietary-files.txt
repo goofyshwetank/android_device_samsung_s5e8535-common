@@ -206,3 +206,5 @@ vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
 vendor/lib/vendor.samsung.hardware.hyper-V2-ndk.so
 vendor/lib64/vendor.samsung_slsi.hardware.epic@1.0.so
 vendor/lib/vendor.samsung_slsi.hardware.epic@1.0.so
+vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
+vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
