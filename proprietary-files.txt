@@ -200,11 +200,6 @@ vendor/etc/init/wifi_slsi.rc
 vendor/lib64/libdsms_vendor.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so
-vendor/lib64/android.hardware.keymaster@4.0.so
-vendor/lib64/android.hardware.keymaster@4.1.so
-vendor/lib64/libkeymaster4support.so
-vendor/lib64/libkeymaster4_1support.so
-vendor/lib64/android.hardware.keymaster@3.0.so
 vendor/lib64/libkeymaster_portable-samsung.so
 vendor/lib64/libpuresoftkeymasterdevice-samsung.so
 vendor/lib64/libkeymaster_messages-samsung.so
