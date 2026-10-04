@@ -1781,6 +1781,8 @@ service watchdogd /system/bin/watchdogd 10 20
 # BATTERY
 on property:sys.boot_completed=1
     write /sys/class/power_supply/battery/boot_completed "1"
+    write /sys/class/sec/tsp/cmd "aot_enable,1"
+    write /sys/module/sync/parameters/auto_fsync 1
 
     chown system system /sys/class/sec/tsp/input/enabled
     chown system system /sys/class/sec/tsp1/input/enabled

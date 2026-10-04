@@ -41,10 +41,10 @@ vendor/lib64/libsecaudioinfo.so
 vendor/etc/SoundBoosterParam.txt
 
 # Audio VNDK libs
-vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa_vendor.so;FIX_SONAME
-vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa_vendor.so;FIX_SONAME
+vendor/lib64/libaudioroute-samsung.so
+vendor/lib/libaudioroute-samsung.so
+vendor/lib64/libtinyalsa-samsung.so
+vendor/lib/libtinyalsa-samsung.so
 
 # Camera Provider hal
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
@@ -52,7 +52,7 @@ vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml
 
 # Camera Dependencies
-vendor/lib64/lib_profiler.so
+vendor/lib64/lib_profiler-samsung.so
 vendor/lib64/libsamsungcamerahal.so
 vendor/lib64/libsamsungcamerahalutils.so
 vendor/lib64/libsamsungcamerahwl_impl.so
@@ -133,7 +133,7 @@ vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # RIL
-vendor/bin/hw/rild
+vendor/bin/hw/rild_exynos
 vendor/bin/cass
 vendor/lib/libsecril-client.so
 vendor/lib64/libsecril-client.so
@@ -144,7 +144,7 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/libsec-ril.so
+vendor/lib64/libsec-ril-impl.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
