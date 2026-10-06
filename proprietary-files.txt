@@ -124,10 +124,10 @@ vendor/lib64/hw/vulkan.mali.so
 vendor/etc/beauty/settings.dat
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung;DISABLE_CHECKELF
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
-vendor/lib64/libskeymint10device.so
-vendor/lib64/libskeymint_cli.so
+vendor/lib64/libskeymint10device.so;DISABLE_CHECKELF
+vendor/lib64/libskeymint_cli.so;DISABLE_CHECKELF
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # RIL
