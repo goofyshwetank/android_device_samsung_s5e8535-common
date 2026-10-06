@@ -131,7 +131,7 @@ vendor/lib64/libskeymint_cli.so;DISABLE_CHECKELF
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # RIL
-vendor/bin/hw/rild_exynos
+vendor/bin/hw/rild
 vendor/bin/cass
 vendor/lib/libsecril-client.so
 vendor/lib64/libsecril-client.so
@@ -142,7 +142,7 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/libsec-ril-impl.so;SYMLINK=vendor/lib64/libsec-ril.so
+vendor/lib64/libsec-ril.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
