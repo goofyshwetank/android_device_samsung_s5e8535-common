@@ -142,7 +142,7 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/libsec-ril-impl.so
+vendor/lib64/libsec-ril-impl.so;SYMLINK=vendor/lib64/libsec-ril.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
@@ -208,3 +208,10 @@ vendor/lib64/vendor.samsung_slsi.hardware.epic@1.0.so
 vendor/lib/vendor.samsung_slsi.hardware.epic@1.0.so
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+
+# Seccomp policy
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
+vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
+
