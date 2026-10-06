@@ -107,8 +107,9 @@ vendor.powerhal.disp.idle_support=false
 ro.radio.noril=no
 ro.carrier=unknown
 ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=26
 ro.vendor.epdg.support=true
-ro.vendor.sec.radio.def_network=9
+ro.vendor.sec.radio.def_network=26
 
 ## Samsung specific
 ro.product_ship=true
