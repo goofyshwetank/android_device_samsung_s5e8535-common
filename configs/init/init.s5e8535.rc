@@ -1819,3 +1819,12 @@ service insmod_sh_common /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.${ro
 # SSWAP
 on boot
     write /proc/sys/vm/swappiness 160
+
+on post-fs-data
+    # rild runs as radio. Leftover root-owned files from older builds EACCES and the CP reset-loops.
+    chown radio radio /data/vendor/secradio/fingerprint
+    chown radio radio /data/vendor/secradio/cscver
+    chown radio radio /data/vendor/secradio/ccfh
+    chmod 0660 /data/vendor/secradio/fingerprint
+    chmod 0660 /data/vendor/secradio/cscver
+    chmod 0660 /data/vendor/secradio/ccfh
