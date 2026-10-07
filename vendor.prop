@@ -129,7 +129,7 @@ ro.crypto.metadata_init_delete_all_keys.enabled=true
 
 ## wifi
 wifi.direct.interface=p2p0
-ro.boot.wificountrycode=00
+# Country comes from the SIM ISO code. Do not pin the driver to world mode 00.
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
