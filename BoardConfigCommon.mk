@@ -116,7 +116,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/s5e8535.cfg
 BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(PRODUCT_DEVICE).cfg
 
-BOARD_BOOTCONFIG := buildtime_bootconfig=enable androidboot.selinux=permissive
+BOARD_BOOTCONFIG := buildtime_bootconfig=enable
 
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_s5e8535)
