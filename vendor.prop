@@ -77,6 +77,8 @@ debug.hwui.skia_atrace_enabled=false
 debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
 debug.sf.enable_transaction_tracing=false
+debug.sf.enable_gl_backpressure=1
+debug.sf.disable_client_composition_cache=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_saturation=1.0
@@ -86,10 +88,14 @@ ro.opengles.version=196610
 ## IncrementalFS
 ro.incremental.enable=yes
 
-## LMK
+## LMK & Process Limits
 ro.lmk.use_psi=true
-ro.lmk.kill_heaviest_task=false
+ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
+ro.lmk.psi_complete_stall_ms=150
+ro.lmk.downgrade_pressure_to_thrashing=true
+ro.config.use_freezer=true
+ro.sys.fw.bg_apps_limit=36
 
 ## Manufacturer
 ro.soc.manufacturer=Samsung
