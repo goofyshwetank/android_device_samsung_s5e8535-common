@@ -282,6 +282,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
@@ -364,3 +366,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_CFI_INCLUDE_PATHS += hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
 
 PRODUCT_PACKAGES += libui_shim
+
