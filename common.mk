@@ -284,6 +284,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/google/pixel/power-libperfmgr \
     hardware/google/pixel/thermal \
+    hardware/google/pixel/pixelstats \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
