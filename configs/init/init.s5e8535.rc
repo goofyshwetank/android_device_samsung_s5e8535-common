@@ -1828,3 +1828,24 @@ on post-fs-data
     chmod 0660 /data/vendor/secradio/fingerprint
     chmod 0660 /data/vendor/secradio/cscver
     chmod 0660 /data/vendor/secradio/ccfh
+
+# AOSP cuts panel rails on screen off. Novatek AOT/LP holds those same
+# regulators, so panel_power_off/on races touch and the first power press
+# often stays black. Force AOT off and full touch power-off, then reload
+# firmware after the panel reset on screen on.
+on property:sys.boot_completed=1
+    write /sys/class/sec/tsp/cmd "aot_enable,0"
+
+on property:debug.tracing.screen_state=1
+    write /sys/class/sec/tsp/cmd "aot_enable,0"
+    write /sys/class/sec/tsp/enabled "1,0"
+
+on property:debug.tracing.screen_state=2
+    start vendor.tsp_resume
+
+service vendor.tsp_resume /vendor/bin/sh -c "sleep 0.1; echo 2,1 > /sys/class/sec/tsp/enabled"
+    user system
+    group system
+    seclabel u:r:vendor_shell:s0
+    disabled
+    oneshot

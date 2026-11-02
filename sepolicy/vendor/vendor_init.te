@@ -14,3 +14,6 @@ allow vendor_init proc_sched:file rw_file_perms;
 
 dontaudit vendor_init radio_prop:file read;
 dontaudit vendor_init system_prop:file read;
+
+allow vendor_init sysfs_touchscreen_writable:file rw_file_perms;
+allow vendor_shell sysfs_touchscreen_writable:file rw_file_perms;
